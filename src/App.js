@@ -1,24 +1,27 @@
-import logo from './logo.svg';
 import './App.css';
+import styled from 'styled-components';
+
+import PythonCourseComponent from "./components/PythonCourseComponent";
+import SelectPlanComponent from "./components/SelectPlanComponent";
+
+
+
+const Container = styled.div`
+  font-family: 'Poppins', sans-serif;
+  display:flex;
+  align-items:center;
+  flex-direction:column;
+`;
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container>
+
+      <PythonCourseComponent/>
+      <SelectPlanComponent/>
+
+    </Container>
   );
 }
 
