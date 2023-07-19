@@ -16,7 +16,7 @@ import "../App.css";
 
 function PythonCourseComponent() {
   return (
-    <div className='min-h-2000 sm:min-h-1800 md:min-h-1600 lg:min-h-1250 my_container'>
+    <div className='min-h-2200 sm:min-h-1800 md:min-h-1600 lg:min-h-1250 my_container'>
 
         {/* top heading and logo */}
 

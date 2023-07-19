@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 import PythonCourseComponent from "./components/PythonCourseComponent";
 import SelectPlanComponent from "./components/SelectPlanComponent";
+import LearnPythonComponent from './components/LearnPythonComponent';
 
 
 
@@ -18,6 +19,7 @@ function App() {
   return (
     <Container>
 
+      <LearnPythonComponent/>
       <PythonCourseComponent/>
       <SelectPlanComponent/>
 
