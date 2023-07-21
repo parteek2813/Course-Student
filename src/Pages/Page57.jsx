@@ -7,24 +7,21 @@ import PageEnd from '../Components/PageEnd'
 
 const Page57 = () => {
   return (
-    <>
-    <header>
+    <div className='grid grid-cols-5 gap-4'>
+    <div className='col-span-5 row-span-1'>
       <Navbar/> 
-    </header>
-    <main className='ml-16 my-8 flex h-auto justify-center'>
-        <div className='w-1/6 h-auto'>
+    </div>
+        <div className='col-span-1 ml-10'>
         <SideBar/>
         </div>
-        <div className='w-9/12 mx-8 h-auto'>
+        <div className='col-span-4 mr-10'>
           <NavSub/>
           <CourseMain/>
         </div>
-    </main>
-    <footer>
+    <div className='col-span-5 mx-10'>
       <PageEnd/>
-    </footer>
-      
-    </>
+    </div>
+   </div>
   )
 }
 

@@ -2,11 +2,11 @@
     width: 67.85px;
     height: 42.407px;
     margin-top: 21px;
-    margin-left: 70px;
+    
 }
 .name{
     color: #215D4F;
-    margin-left:2px;
+    
     margin-top:30px ;
 }
 .list-elements{
@@ -29,4 +29,36 @@
 .sec3{
     right: 0%;
     margin-left: 350px;
+}
+ .nav-container{
+    display: grid;
+    grid-template-columns: 20% 40% 40%;
+    /* display: grid;
+    grid-template-columns: 40% 40%; */
+    align-items: center;
+    justify-content: space-evenly;
+}
+.click{
+    
+}
+
+.nav-item2{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-item-click{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+    background-color: rgb(33, 93, 79,0.1);
+}
+.nav-item3{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    
 }

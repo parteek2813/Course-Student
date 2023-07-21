@@ -1,22 +1,22 @@
 import React from 'react'
-import Ellipse from '../Utils/Images/Ellipse217.svg'
-import ContactCard from '../Utils/Images/ContactCard.svg'
-import Arrow from '../Utils/Images/Arrow.svg'
-import LeaderBoard from '../Utils/Images/LeaderBoard.svg'
-import Pause from '../Utils/Images/Pause.svg'
-import Placed from '../Utils/Images/Placed.svg'
-import Doubts from '../Utils/Images/Doubts.svg'
-import Events from '../Utils/Images/Events.svg'
-import Notes from '../Utils/Images/Notes.svg'
-import Certificate from '../Utils/Images/Certificate.svg'
-import SideBarBottom1 from '../Utils/Images/SideBarBottom1.png'
-import SideBarBottom2 from '../Utils/Images/SideBarBottom2.png'
+import Ellipse from '../images/page 57,58,59,60,61/Images/Ellipse217.svg'
+import ContactCard from '../images/page 57,58,59,60,61/Images/ContactCard.svg'
+import Arrow from '../images/page 57,58,59,60,61/Images/Arrow.svg'
+import LeaderBoard from '../images/page 57,58,59,60,61/Images/LeaderBoard.svg'
+import Pause from '../images/page 57,58,59,60,61/Images/Pause.svg'
+import Placed from '../images/page 57,58,59,60,61/Images/Placed.svg'
+import Doubts from '../images/page 57,58,59,60,61/Images/Doubts.svg'
+import Events from '../images/page 57,58,59,60,61/Images/Events.svg'
+import Notes from '../images/page 57,58,59,60,61/Images/Notes.svg'
+import Certificate from '../images/page 57,58,59,60,61/Images/Certificate.svg'
+import SideBarBottom1 from '../images/page 57,58,59,60,61/Images/SideBarBottom1.png'
+import SideBarBottom2 from '../images/page 57,58,59,60,61/Images/SideBarBottom2.png'
 import '../CSS/SideBar.css'
 
 const SideBar = () => {
   return (
     <>
-      <aside className='w-full h-full relative' style={{background:'#215D4F'}}>
+      <div className='w-full h-full relative' style={{background:'#215D4F'}}>
         <div className='flex pt-4'>
         <img src={Ellipse} className='relative left-4 h-14 w-14 opacity-60' alt='ellipse'/>
         <img src={Ellipse} className=' relative -left-2 w-14 h-14 opacity-60' alt='ellipse'/>
@@ -77,7 +77,7 @@ const SideBar = () => {
         <img src={SideBarBottom1} className='relative -bottom-48' alt='design'/>
         <img src={SideBarBottom2} className='relative bottom-0' alt='design2'/>
         </div>
-      </aside>
+      </div>
     </>
   )
 }

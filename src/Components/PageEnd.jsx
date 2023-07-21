@@ -1,22 +1,22 @@
 import React from 'react'
-import Group18 from '../Utils/Images/Group 18.svg'
-import Twitter from '../Utils/Images/Twitter.svg'
-import Telegram from '../Utils/Images/Telegram.svg'
-import Meta from '../Utils/Images/Meta.svg'
-import Facebook from '../Utils/Images/Facebook.svg'
-import Linkedin from '../Utils/Images/Linkedin.svg'
+import Group18 from '../images/page 57,58,59,60,61/Images/Group 18.svg'
+import Twitter from '../images/page 57,58,59,60,61/Images/Twitter.svg'
+import Telegram from '../images/page 57,58,59,60,61/Images/Telegram.svg'
+import Meta from '../images/page 57,58,59,60,61/Images/Meta.svg'
+import Facebook from '../images/page 57,58,59,60,61/Images/Facebook.svg'
+import Linkedin from '../images/page 57,58,59,60,61/Images/Linkedin.svg'
 
 const PageEnd = () => {
   return (
-    <footer>
+    <div>
     <div className='decoration-grey pb-4'>
-    <section className='flex justify-center'>
+    <div className='flex justify-center'>
         <img src={Group18} className='logo' alt='logo'/>
         <p>
             <h1 className='name font-sans font-medium text-lg'>Edfling Courses</h1>
             <p className='opacity-60 text-xs ml-10'>Success is here!!!</p>
         </p>
-    </section>
+    </div>
     <div className='mx-20 flex text-center'>
         <ul className='w-1/5' >
             <li className='name font-sans font-bold text-xl my-2'>About</li>
@@ -80,7 +80,7 @@ const PageEnd = () => {
       </ul>
     </div>
     </div>
-    </footer>
+    </div>
   )
 }
 

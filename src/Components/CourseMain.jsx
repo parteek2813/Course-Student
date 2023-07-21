@@ -1,12 +1,12 @@
 import React from 'react'
-import Like from '../Utils/Images/Like.svg'
-import Comment from '../Utils/Images/Comment.svg'
-import Dislike from '../Utils/Images/Dislike.svg'
-import ProfilePic from '../Utils/Images/ProfilePic.png'
+import Like from '../images/page 57,58,59,60,61/Images/Like.svg'
+import Comment from '../images/page 57,58,59,60,61/Images/Comment.svg'
+import Dislike from '../images/page 57,58,59,60,61/Images/Dislike.svg'
+import ProfilePic from '../images/page 57,58,59,60,61/Images/ProfilePic.png'
 
 const CourseMain = () => {
   return (
-    <main className='h-auto'>
+    <div className='h-auto'>
       <div className='w-full h-full'>  
         <iframe className='w-full my-4' style={{height:'550px'}}  src="https://www.youtube.com/embed/x6f13UXWeQI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
       </div>
@@ -79,7 +79,7 @@ const CourseMain = () => {
         </ul>
       </p>
       <p className='my-2 font-sans font-medium text-lg' style={{color:'#215D4F'}}>View more comments......</p>
-    </main>
+    </div>
   )
 }
 
