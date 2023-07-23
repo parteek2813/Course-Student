@@ -1,0 +1,210 @@
+.verify-otp-container {
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  border-radius: 25px;
+  padding: 5%;
+  margin-bottom: 10%;
+}
+
+.container {
+  background-color: #215D4F;
+  padding: 2%;
+}
+
+.join-edfling h2 {
+  color:#215D4F;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.left-column {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.right-column {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.left-image {
+  width: 100%; /* Adjust the image width as needed */
+  height: auto; /* Adjust the image height as needed */
+}
+
+.join-edfling {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.role-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.role-button {
+  margin: 0 10px;
+  padding: 10px 20px;
+  border: 2px solid #215D4F; /* Dark green color */
+  border-radius: 5px;
+  background-color: white;
+  color: #215D4F; /* Dark green color */
+  font-weight: bold;
+  width: 125px;
+}
+
+.verify-otp-heading {
+  margin-top: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  color:#215D4F;
+  padding: 30px;
+}
+
+.otp-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.otp-input {
+  border: 2px solid #7ea89e; /* Dark green color */
+  border-radius: 10px;
+  padding: 10px;
+  margin: 0 5px;
+  height: 47px;
+  width: 65px; /* Adjust the input width as needed */
+  text-align: center;
+}
+
+.verify-button {
+  margin-top: 20px;
+  padding: 0 30px;
+  border: 2px solid #215D4F; /* Dark green color */
+  border-radius: 10px;
+  background-color: #215D4F; /* Dark green color */
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  width: 300px;
+  height: 148px;
+}
+
+.role-button.selected {
+  background-color: #215D4F; /* Dark green color */
+  color: white;
+}
+
+.resend-otp {
+  font-weight: bold;
+ font-size: small;
+ width: 227px;
+ height:21px ;
+}
+
+.resend-link {
+  font-weight: bold;
+  color:blue;
+  font-size: small;
+
+}
+
+.resend-message {
+  padding: 5%;
+  text-align: center;
+  font-size: small;
+  width: 299px;
+  height:63px;
+  color:#215D4F;
+}
+
+/* Mobile styles */
+@media screen and (min-width: 769px) {
+  div {
+    font-size : 20px;
+    }
+
+    .join-edfling h2 {
+      font-size: 24px; /* Increase the font size to 24 pixels */
+    }
+
+   .verify-otp-heading {
+      font-size: 24px;
+    }
+
+    .otp-input {
+      height: 47px;
+      width: 65px;
+      
+    }
+
+    .verify-button {
+      width: 300px;
+        height: 48px;
+    }
+
+    .resend-otp {
+     font-size:small;
+    }
+
+    .resend-link {
+      font-size:small;
+    }
+
+    .resend-message  {
+      font-size:small;
+    }
+   
+    .role-button {
+      width: 125px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    div {
+      font-size : 10px;
+      }
+    
+      .join-edfling h2 {
+        font-size: 14px;
+      }
+
+     .verify-otp-heading {
+        font-size: 14px;
+      }
+
+      .otp-input {
+        height: 17px;
+      width: 30px;
+      }
+
+      .verify-button {
+        width: 100px;
+        height: 20px;
+      }
+
+      .resend-otp {
+       font-size: x-small;
+      }
+
+      .resend-link {
+        font-size: x-small;
+       }
+
+       .resend-message {
+        font-size:x-small;
+        text-align: center;
+      }
+     
+      .role-button {
+        width: 80px;
+      }
+
+}

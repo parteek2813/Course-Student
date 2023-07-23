@@ -1,53 +1,34 @@
-import React from "react";
-import "./App.css";
-import Page18 from "./Pages/Page18";
-import Page57 from "./Pages/Page57";
-import { Route, BrowserRouter, Routes } from "react-router-dom";
-import Page19 from "./Pages/Page19";
-import Page58 from "./Pages/Page58";
-import Page59 from "./Pages/Page59";
-import Page60 from "./Pages/Page60";
-import Page61 from "./Pages/Page61";
-import Page20 from "./Pages/Page20";
-import Imac211 from './Pages/Imac211';
-import Page68 from "./Pages/Page68";
-import Page69 from "./Pages/Page69";
-import Page26_27 from "./Pages/Page26_27";
-import Page1 from "./Pages/Page1";
-import Login from "./Pages/Login/index";
-import Signup from "./Pages/Signup/index";
-import Navbar from "./Components/Navbar";
-import Footer from "./Components/Footer";
+import React, { useState } from 'react';
+import ResetPassword from './ResetPassword';
+import VerifyOTP from './VerifyOTP';
+import NewPassword from './NewPassword';
+import SuccessPopup from './SuccessPopup';
 
+export const PageContext = React.createContext();
 
-function App() {
+const App = () => {
+  const [page, setPage] = useState('reset-password');
+
+  const renderPage = () => {
+    switch (page) {
+      case 'reset-password':
+        return <ResetPassword />;
+      case 'verify-otp':
+        return <VerifyOTP />;
+      case 'new-password':
+        return <NewPassword />;
+      case 'success-popup':
+        return <SuccessPopup />;
+      default:
+        return null;
+    }
+  };
+
   return (
-    <>
-      <BrowserRouter>
-      <Navbar/>
-        <Routes>
-          <Route path="/page57" element={<Page57 />} />
-          <Route path="/page58" element={<Page58 />} />
-          <Route path="/page59" element={<Page59 />} />
-          <Route path="/page60" element={<Page60 />} />
-          <Route path="/page61" element={<Page61 />} />
-          <Route path="/page19" element={<Page19 />} />
-          <Route path="/page20" element={<Page20 />} />
-          <Route path="/Page18" element={<Page18 />} />
-          <Route path='/imac211' element={<Imac211 />} />
-          <Route path="/page68" element={<Page68 />} />
-          <Route path="/page69" element={<Page69 />} />
-          <Route path="/page1" element={<Page1 />} />
-          <Route path="/page26" element={<Page26_27 type={1}/>} />
-          <Route path="/page27" element={<Page26_27 type={2}/>} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/signup" element={<Signup />} />
-            
-        </Routes>
-        <Footer/>
-      </BrowserRouter>
-    </>
+    <PageContext.Provider value={{ page, setPage }}>
+      <div className="container mx-auto">{renderPage()}</div>
+    </PageContext.Provider>
   );
-}
+};
 
 export default App;
